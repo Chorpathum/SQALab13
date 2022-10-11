@@ -8,7 +8,8 @@ class FizzBuzzTest {
 
 	@Test
 	void test() {
-		fail("Not yet implemented");
+		FizzBuzz FiBu = new FizzBuzz() ;
+		assertEquals(1,FiBu.FizzBuzzcal(1));
 	}
 
 }
