@@ -18,14 +18,21 @@ class FizzBuzzTest {
 	@Test
 	void FizzBuzzTest1() {
 		
-		assertEquals(1,FiBu.FizzBuzzcal(1));
+		assertEquals("1",FiBu.FizzBuzzcal(1));
 	}
 	/**/
 	@DisplayName("input int 2")
 	@Test
 	void FizzBuzzTest2() {
 		
-		assertEquals('2',FiBu.FizzBuzzcal(2));
+		assertEquals("2",FiBu.FizzBuzzcal(2));
+		
+	}
+	@DisplayName("input int 3")
+	@Test
+	void FizzBuzzTest3() {
+		
+		assertEquals("Fizz",FiBu.FizzBuzzcal(3));
 		
 	}
 	
