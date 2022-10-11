@@ -5,6 +5,10 @@ import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.CsvFileSource;
+
+
 
 import main.FizzBuzz;
 
@@ -50,6 +54,14 @@ class FizzBuzzTest {
 		assertEquals("FizzBuzz",FiBu.FizzBuzzcal(15));
 		
 	}
-
-
+	@DisplayName("input int 1-100 ")
+	@ParameterizedTest
+	@CsvFileSource(files = "src/filetest/Num1-100.csv",numLinesToSkip = 1)
+	void FizzBuzzTest6(int num, String expect) {
+				
+		assertEquals(expect, FiBu.FizzBuzzcal(num));
+		
+	}
+	
+	
 }
