@@ -36,5 +36,13 @@ class FizzBuzzTest {
 		
 	}
 	
+	@DisplayName("input int 5 output Buzz")
+	@Test
+	void FizzBuzzTest4() {
+		
+		assertEquals("Buzz",FiBu.FizzBuzzcal(5));
+		
+	}
+	
 
 }
