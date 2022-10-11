@@ -43,6 +43,13 @@ class FizzBuzzTest {
 		assertEquals("Buzz",FiBu.FizzBuzzcal(5));
 		
 	}
-	
+	@DisplayName("input int 15 output FizzBuzz")
+	@Test
+	void FizzBuzzTest5() {
+		
+		assertEquals("FizzBuzz",FiBu.FizzBuzzcal(15));
+		
+	}
+
 
 }
