@@ -1,7 +1,7 @@
 package main;
 
 public class FizzBuzz {
-	 public double FizzBuzzcal(double input) {
-		 return input;
+	 public String FizzBuzzcal(Integer input) {
+		 return input.toString();
 	 }
 }
